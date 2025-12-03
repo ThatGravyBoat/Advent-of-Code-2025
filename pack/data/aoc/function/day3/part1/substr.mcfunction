@@ -1,0 +1,1 @@
+$data modify storage aoc:day3 text set string storage aoc:day3 value $(index)
