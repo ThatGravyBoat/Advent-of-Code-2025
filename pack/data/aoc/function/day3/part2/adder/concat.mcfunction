@@ -1,0 +1,1 @@
+$data modify storage aoc:day3 final_output.value set value "$(char)$(value)"

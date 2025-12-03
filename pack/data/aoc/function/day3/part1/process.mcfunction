@@ -4,9 +4,8 @@ $data modify storage aoc:day3 text set value "$(value)"
 scoreboard players set $index temp -1
 scoreboard players set $biggest temp -1
 scoreboard players set $biggest_index temp -1
-scoreboard players set $skip_last temp 1
 
-function aoc:day3/part1/get_biggest
+function aoc:day3/get_biggest  { "max": 0 }
 
 execute store result storage aoc:day3 first int 1 run scoreboard players get $biggest temp
 scoreboard players operation $index temp = $biggest_index temp
@@ -16,11 +15,9 @@ scoreboard players set $biggest temp -1
 scoreboard players set $biggest_index temp -1
 
 execute store result storage aoc:day3 index int 1 run scoreboard players get $temp temp
-function aoc:day3/part1/substr with storage aoc:day3
+function aoc:day3/substr with storage aoc:day3
 
-scoreboard players set $skip_last temp 0
-
-function aoc:day3/part1/get_biggest
+function aoc:day3/get_biggest { "max": -1 }
 
 execute store result storage aoc:day3 second int 1 run scoreboard players get $biggest temp
 

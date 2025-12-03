@@ -1,0 +1,1 @@
+$data modify storage aoc:day3 output set value "$(output)$(append)"

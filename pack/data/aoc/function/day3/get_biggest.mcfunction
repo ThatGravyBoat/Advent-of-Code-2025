@@ -4,7 +4,7 @@ data modify storage aoc:day3 text set string storage aoc:day3 text 1
 
 # if (aoc:day3.text.length()) == 0 return 0
 execute store result score $length temp run data get storage aoc:day3 text
-execute if score $length temp matches 0 if score $skip_last temp matches 1 run return 0
+$execute if score $length temp matches ..$(max) run return 0
 
 execute store result score $num temp run function aoc:utils/cast_to_number with storage aoc:day3 cast
 
@@ -13,4 +13,4 @@ execute if score $num temp > $biggest temp run scoreboard players operation $big
 
 execute if score $length temp matches 0 run return 0
 
-function aoc:day3/part1/get_biggest
+$function aoc:day3/get_biggest { "max": $(max) }
