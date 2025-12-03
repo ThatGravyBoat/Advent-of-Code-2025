@@ -1,0 +1,1 @@
+$data modify storage aoc:day2 part set value "$(part)$(char)"

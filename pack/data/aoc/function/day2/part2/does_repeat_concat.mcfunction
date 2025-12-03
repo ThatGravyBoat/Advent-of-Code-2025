@@ -1,0 +1,1 @@
+$data modify storage aoc:day2 repeat_check set value "$(one)$(one)"

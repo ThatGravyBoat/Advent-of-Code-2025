@@ -1,0 +1,1 @@
+$data modify storage aoc:day2 repeat_check_substr set string storage aoc:day2 repeat_check $(repeat_start) $(repeat_end)
