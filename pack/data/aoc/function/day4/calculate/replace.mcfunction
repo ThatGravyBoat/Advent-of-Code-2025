@@ -1,0 +1,1 @@
+$data modify storage aoc:day4 grid[$(x)][$(y)] set value "."
